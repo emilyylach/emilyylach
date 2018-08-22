@@ -107,7 +107,14 @@
         <div class="section-subheading center">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. PELLENTESQUE VITAE ULTRICES PURUS, SIT AMET TINCIDUNT TELLUS. PRAESENT VENENATIS NUNC AUCTOR MALESUADA VEHICULA. MORBI NON SAPIEN NEQUE.</div>
       </div>
       <div class="form-wrapper-2 w-form">
-        <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="text" class="form-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Imię..." id="Name" required=""><input type="email" class="form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email..." id="Email" required=""><textarea id="field-2" name="field-2" data-name="Field 2" maxlength="5000" placeholder="Treść..." class="form-field text-area w-input"></textarea><input type="submit" value="Wyślij" data-wait="Proszę czekać..." class="button-2 full-width w-button"></form>
+
+        <form action="https://formspree.io/chris.cybula@gmail.com" method="POST" id="email-form" name="email-form" data-name="Email Form" class="form">
+          <input type="text" class="form-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Imię..." id="Name" required="">
+          <input name="_replyto" type="email" class="form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email..." id="Email" required="">
+          <textarea id="field-2" name="field-2" data-name="Field 2" maxlength="5000" placeholder="Treść..." class="form-field text-area w-input"></textarea>
+          <input  type="submit" value="Send" type="submit" value="Wyślij" data-wait="Proszę czekać..." class="button-2 full-width w-button">
+        </form>
+
         <div class="w-form-done">
           <p>Thank you! Your submission has been received!</p>
         </div>
